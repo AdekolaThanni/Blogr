@@ -1,0 +1,74 @@
+.heading-1 {
+    color: $white;
+    font-size: 6rem;
+    margin: 6rem auto 0;
+    letter-spacing: .3rem;
+    text-align: center;
+    width: fit-content;
+
+    @media only screen and (max-width: $bp-largest){
+        width: 80rem;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        margin-top: 15rem;
+        font-size: 5.5rem;
+        width: 60rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        font-size: 4rem;
+        width: 50rem;
+    }
+
+}
+
+.sub-heading {
+    color: rgba(255, 255, 255, .6);
+    font-size: 2rem;
+    margin: 4rem auto 5rem;
+    width: fit-content;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small){
+        width: 30rem;
+    }
+}
+
+.heading-2 {
+    color: $heading-blue;
+    margin: 15rem auto 10rem;
+    font-size: 4rem;
+    width: fit-content;
+}
+
+.heading-3 {
+    color: $heading-blue;
+    font-size: 3rem;
+    margin: 3rem 0;
+
+    @media only screen and (max-width: $bp-medium){
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+
+.text {
+    color: $very-dark-gray;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 8rem;
+
+    @media only screen and (max-width: $bp-medium){
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-gray {
+    color: $footer-text;
+}

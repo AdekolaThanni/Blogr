@@ -1,0 +1,180 @@
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($very-light-red, 0.8) 0%,
+      rgba($light-red, 0.8) 50%
+    ),
+    url("../images/bg-pattern-intro.svg");
+
+  background-position: 30% 50%;
+
+  // Make right bottom curved
+  border-bottom-left-radius: 10rem;
+
+  // Make header take 80% of viewport height
+  height: 52rem;
+
+  position: relative;
+
+  &__logo {
+    display: inline-block;
+    position: absolute;
+    top: 5rem;
+    left: 15rem;
+
+    @media only screen and (max-width: $bp-large) {
+      left: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      left: 2rem;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    padding: 5rem 15rem 0 25rem;
+    height: 14rem;
+
+    @media only screen and (max-width: $bp-largest) {
+      padding-right: 10rem;
+    }
+    @media only screen and (max-width: $bp-large) {
+      padding-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+      align-items: center;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 2px;
+      width: 70%;
+      height: auto;
+      padding: 3rem 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    margin-left: 5rem;
+
+    // Move up a little bit
+    transform: translateY(1.3rem);
+
+    @media only screen and (max-width: $bp-medium) {
+      align-items: center;
+      flex-direction: column;
+      margin-left: 0;
+      transform: translateY(0);
+      width: 90%;
+      border-bottom: 1px solid $footer-text;
+    }
+
+    &-link {
+      display: inline-block;
+      // margin-right: 3rem;
+
+      width: 15rem;
+
+      @media only screen and (max-width: $bp-largest) {
+        width: 13rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+
+  .items {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    list-style: none;
+    margin-top: 2rem;
+    padding: 3rem 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 1rem 3rem;
+      background-color: #eee;
+      border-radius: 2px;
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+
+    .item {
+      color: $very-dark-gray;
+      margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        color: $heading-blue;
+      }
+    }
+
+    .item:hover {
+      color: var(--very-dark-black);
+      cursor: pointer;
+      font-weight: 700;
+    }
+  }
+  .item-product {
+    display: none;
+  }
+  .item-company {
+    display: none;
+  }
+  .item-connect {
+    display: none;
+  }
+
+  .arrow-light {
+    display: inline-block;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  .arrow-dark {
+    display: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: inline-block;
+    }
+  }
+
+  &__sign-box {
+    margin-left: auto;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: 2rem;
+      margin-left: 0;
+    }
+  }
+
+  .option-box {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+.hamburger {
+  display: none;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: inline-block;
+    position: relative;
+    top: 7rem;
+    left: 90vw;
+  }
+}
+
+.header__top-display-flex {
+  display: flex;
+}
